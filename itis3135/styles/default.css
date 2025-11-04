@@ -1,0 +1,47 @@
+body
+{
+    background-color: #344055;
+    text-align: center;
+    color: #FFECD1;
+    font-family:'Kumbh Sans', sans-serif;   
+}
+
+a
+{
+    color: silver;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #A9CEF4;
+    text-decoration:line;
+}
+
+main
+{
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+h2
+{
+    text-align: center;
+}
+
+p
+{
+    text-align: center;
+}
+
+img
+{
+    width: 27.5%;
+}
+
+figure
+{
+    text-align: center;
+    font-style: italic;
+}
