@@ -9,17 +9,7 @@
 </head>
 <body>
     <header>
-        <h1>Joseph Watson's Jolly Walrus || ITIS Introduction</h1>
-        <nav>
-            <a href = "./">Home</a>
-            ||
-            <a href="introduction.html">Introduction</a>
-            ||
-            <a href="contract.html">Contract</a>
-            ||
-            <a href="../jolly_walrus/about.html">Jolly Walrus</a>
-
-        </nav>
+        <div data-include="components/header.html"></div>
     </header>
     <main>
         <h2>Introduction</h2>
@@ -45,31 +35,12 @@
         </ul>
     </main>
     <footer>
-        <nav>
-            <a href="https://webpages.charlotte.edu/jwats114/">Charlotte.edu</a>
-            ||
-            <a href="https://github.com/JWats114/JWats114.github.io">Github</a>
-            ||
-            <a href="https://www.freecodecamp.org/trewatson">freeCodeCamp</a>
-            ||
-            <a href="https://www.codecademy.com/profiles/TreWatson14">Codecademy</a>
-            ||
-            <a href="https://www.linkedin.com/in/joseph-watson3/">LinkedIn</a>
-        </nav>
-        <p>Page Designed By <a href="watsonenterprises.com/">Watson Enterprises</a> &copy; 2025</p>
-        <a href="https://validator.w3.org/check?uri=referer">
-                <img style="border:0;width:60px;" src="https://www.w3.org/html/logo/badge/html5-badge-h-solo.png" 
-                     alt="Valid HTML!">
-        </a>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
-                     alt="Valid CSS!">
-        </a>  
+        <div data-include="components/footer.html"></div>  
     </footer>
     <script>
         document.getElementById("validation_link.html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
         document.getElementById("validation_link.css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
 </body>
-
 </html>
