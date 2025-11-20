@@ -45,3 +45,18 @@ figure
     text-align: center;
     font-style: italic;
 }
+
+.divider {
+  margin: 0 auto;
+  border: 0 auto;
+  height: 1px;
+  width: 25%;
+  text-align: center;
+  background: #FFECD1;
+}
+
+nav
+{
+    font-size: 20px;
+    margin: 5px auto;
+}
