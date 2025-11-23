@@ -72,6 +72,36 @@ li
     width: 90%;
 }
 
+table
+{
+    width: 80%;
+    background-color: black;
+    margin: 0 auto;
+    font-size: 18px;
+    border-collapse: collapse;
+}
+
+table th, table td
+{
+    border: 1px solid blue;
+    padding: 10px;
+}
+
+thead
+{
+    text-align: center;
+}
+
+tbody
+{
+    text-align: center;
+}
+
+td
+{
+    text-align: left;
+}
+
 
 @media screen and (min-width: 981px) and (max-width: 1400px)
 {
