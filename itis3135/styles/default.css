@@ -20,9 +20,10 @@ a:hover
 
 main
 {
+    max-width: 1200px;
+    width: 90%;
     text-align: left;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 0 auto;
 }
 
 h2
@@ -64,4 +65,109 @@ nav
 li
 {
     margin: 8px auto;
+}
+
+.divider
+{
+    width: 90%;
+}
+
+
+@media screen and (min-width: 981px) and (max-width: 1400px)
+{
+    h1
+    {
+        font-size: 35px;
+    }
+    
+    h2
+    {
+        font-size: 32px;
+    }
+
+    h3
+    {
+        font-size: 30px;
+    }
+
+    nav
+    {
+        font-size: 30px;
+    }
+
+    p
+    {
+        font-size: 25px;
+    }
+
+    li
+    {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 980px)
+{
+    h1
+    {
+        font-size: 30px;
+    }
+
+    h2
+    {
+        font-size: 27px;;
+    }
+
+    h3
+    {
+        font-size: 25px;
+    }
+
+    nav
+    {
+        font-size: 25px;
+    }
+
+    p
+    {
+        font-size: 20px;
+    }
+
+    li
+    {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 370px) and (max-width: 600px)
+{
+    h1
+    {
+        font-size: 25px;
+    }
+
+    h2
+    {
+        font-size: 22px;
+    }
+    
+    h3
+    {
+        font-size: 20px;
+    }
+
+    nav
+    {
+        font-size: 20px;
+    }
+
+    p
+    {
+        font-size: 15px;
+    }
+
+    li
+    {
+        font-size: 15px;
+    }
 }
