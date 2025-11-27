@@ -66,118 +66,119 @@
         <form id="introForm" enctype="multipart/form-data">
             <h2>Names</h2>
 
-            <label>First Name:</label><br>
-            <input type="text" name="firstName" placeholder="Enter your first name" value="Joseph" required><br><br>
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" value="Joseph" required><br><br>
 
-            <label>Middle Name / Initial</label><br>
-            <input type="text" name="middleName" placeholder="Enter your middle name or initial" value="Goodwin"><br><br>
+            <label for="middleName">Middle Name / Initial</label><br>
+            <input type="text" id="middleName" name="middleName" placeholder="Enter your middle name or initial" value="Goodwin"><br><br>
 
-            <label>Nickname / Preferred Name</label><br>
-            <input type="text" name="nickname" placeholder="Enter your nickname" value="Tre"><br><br>
+            <label for="nickname">Nickname / Preferred Name</label><br>
+            <input type="text" id="nickname" name="nickname" placeholder="Enter your nickname" value="Tre"><br><br>
 
-            <label>Last name</label><br>
-            <input type="text" name="lastName" placeholder="Enter your last name" value="Watson" required><br><br>
+            <label for="lastName">Last name</label><br>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" value="Watson" required><br><br>
 
-            <label>Mascot Adjective</label><br>
-            <input type="text" name="mascotAdjective" placeholder="Enter mascot adjective" value="Jolly"><br><br>
+            <label for="mascotAdjective">Mascot Adjective</label><br>
+            <input type="text" id="mascotAdjective" name="mascotAdjective" placeholder="Enter mascot adjective" value="Jolly"><br><br>
 
-            <label>Mascot Animal</label><br>
-            <input type="text" name="mascotAnimal" placeholder="Enter mascot animal" value="Walrus"><br><br>
+            <label for="mascotAnimal">Mascot Animal</label><br>
+            <input type="text" id="mascotAnimal" name="mascotAnimal" placeholder="Enter mascot animal" value="Walrus"><br><br>
 
             <h2>Picture</h2>
             <figure>
                 <img id="previewImage" src="images/funPic.jpg" alt="Hiking photo" width="250">
             </figure>
+            <label for="picture">Upload Picture:</label><br>
             <input type="file" id="picture" name="picture" accept="image/*"><br><br>
 
-            <label>Caption</label><br>
-            <input type="text" name="caption" placeholder="Enter image caption" value="Still standing"><br><br>
+            <label for="caption">Caption</label><br>
+            <input type="text" id="caption" name="caption" placeholder="Enter image caption" value="Still standing"><br><br>
 
-            <label>Personal Background:</label><br>
-            <input type="text" name="personalBackground" placeholder="Enter personal background" value="I am from Charlotte, NC and have lived here since I was 3 years old."><br><br>
+            <label for="personalBackground">Personal Background:</label><br>
+            <input type="text" id="personalBackground" name="personalBackground" placeholder="Enter personal background" value="I am from Charlotte, NC and have lived here since I was 3 years old."><br><br>
 
-            <label>Professional Background:</label><br>
-            <input type="text" name="professionalBackground" placeholder="Enter professional background" value="Your professional background"><br><br>
+            <label for="professionalBackground">Professional Background:</label><br>
+            <input type="text" id="professionalBackground" name="professionalBackground" placeholder="Enter professional background" value="Your professional background"><br><br>
 
-            <label>Academic Background:</label><br>
-            <input type="text" name="academicBackground" placeholder="Enter academic background" value="Your academic background"><br><br>
+            <label for="academicBackground">Academic Background:</label><br>
+            <input type="text" id="academicBackground" name="academicBackground" placeholder="Enter academic background" value="Your academic background"><br><br>
 
-            <label>Programming/Software Background:</label><br>
-            <input type="text" name="programmingBackground" placeholder="Enter programming background" value="Your programming background"><br><br>
+            <label for="programmingBackground">Programming/Software Background:</label><br>
+            <input type="text" id="programmingBackground" name="programmingBackground" placeholder="Enter programming background" value="Your programming background"><br><br>
 
-            <label>Primary Computer Platform:</label><br>
-            <input type="text" name="computerPlatform" placeholder="Enter primary computer platform" value="Your computer platform"><br><br>
+            <label for="computerPlatform">Primary Computer Platform:</label><br>
+            <input type="text" id="computerPlatform" name="computerPlatform" placeholder="Enter primary computer platform" value="Your computer platform"><br><br>
 
             <h2>Courses I'm Taking and Why:</h2><br>
             <div id="courses">
             <div class="course">
-                <label>Department</label><br>
-                <input type="text" placeholder="Department" value="ITIS" class="dept" name="dept[]"><br><br>
-                <label>Class Number</label><br>
-                <input type="text" placeholder="Number" value="3135" class="num" name="num[]"><br><br>
-                <label>Class Title</label><br>
-                <input type="text" placeholder="Name" value="Front-End Web App Development" class="name" name="name[]"><br><br>
-                <label>Reason for taking</label><br>
-                <input type="text" placeholder="Reason" value="Required in my concentration" class="reason" name="reason[]"><br><br>
+                <label for="dept1">Department</label><br>
+                <input type="text" id="dept1" placeholder="Department" value="ITIS" class="dept" name="dept[]"><br><br>
+                <label for="num1">Class Number</label><br>
+                <input type="text" id="num1" placeholder="Number" value="3135" class="num" name="num[]"><br><br>
+                <label for="name1">Class Title</label><br>
+                <input type="text" id="name1" placeholder="Name" value="Front-End Web App Development" class="name" name="name[]"><br><br>
+                <label for="reason1">Reason for taking</label><br>
+                <input type="text" id="reason1" placeholder="Reason" value="Required in my concentration" class="reason" name="reason[]"><br><br>
                 <button type="button" class="deleteCourse">❌</button><br><br>
             </div>
 
             <div class="course">
-                <label>Department</label><br>
-                <input type="text" placeholder="Department" value="AFRS" class="dept" name="dept[]"><br><br>
-                <label>Class Number</label><br>
-                <input type="text" placeholder="Number" value="1501" class="num" name="num[]"><br><br>
-                <label>Class Title</label><br>
-                <input type="text" placeholder="Name" value="Global Social Science" class="name" name="name[]"><br><br>
-                <label>Reason for taking</label><br>
-                <input type="text" placeholder="Reason" value="Sounded Interesting" class="reason" name="reason[]"><br><br>
+                <label for="dept2">Department</label><br>
+                <input type="text" id="dept2" placeholder="Department" value="AFRS" class="dept" name="dept[]"><br><br>
+                <label for="num2">Class Number</label><br>
+                <input type="text" id="num2" placeholder="Number" value="1501" class="num" name="num[]"><br><br>
+                <label for="name2">Class Title</label><br>
+                <input type="text" id="name2" placeholder="Name" value="Global Social Science" class="name" name="name[]"><br><br>
+                <label for="reason2">Reason for taking</label><br>
+                <input type="text" id="reason2" placeholder="Reason" value="Sounded Interesting" class="reason" name="reason[]"><br><br>
                 <button type="button" class="deleteCourse">❌</button><br><br>
             </div>
 
             <div class="course">
-                <label>Department</label><br>
-                <input type="text" placeholder="Department" value="ITSC" class="dept" name="dept[]"><br><br>
-                <label>Class Number</label><br>
-                <input type="text" placeholder="Number" value="2175" class="num" name="num[]"><br><br>
-                <label>Class Title</label><br>
-                <input type="text" placeholder="Name" value="Logic and Algorithms" class="name" name="name[]"><br><br>
-                <label>Reason for taking</label><br>
-                <input type="text" placeholder="Reason" value="Required in my concentration" class="reason" name="reason[]"><br><br>
+                <label for="dept3">Department</label><br>
+                <input type="text" id="dept3" placeholder="Department" value="ITSC" class="dept" name="dept[]"><br><br>
+                <label for="num3">Class Number</label><br>
+                <input type="text" id="num3" placeholder="Number" value="2175" class="num" name="num[]"><br><br>
+                <label for="name3">Class Title</label><br>
+                <input type="text" id="name3" placeholder="Name" value="Logic and Algorithms" class="name" name="name[]"><br><br>
+                <label for="reason3">Reason for taking</label><br>
+                <input type="text" id="reason3" placeholder="Reason" value="Required in my concentration" class="reason" name="reason[]"><br><br>
                 <button type="button" class="deleteCourse">❌</button><br><br>
             </div>
 
             <div class="course">
-                <label>Department</label><br>
-                <input type="text" placeholder="Department" value="ITSC" class="dept" name="dept[]"><br><br>
-                <label>Class Number</label><br>
-                <input type="text" placeholder="Number" value="3146" class="num" name="num[]"><br><br>
-                <label>Class Title</label><br>
-                <input type="text" placeholder="Name" value="Operating Systems & Networking" class="name" name="name[]"><br><br>
-                <label>Reason for taking</label><br>
-                <input type="text" placeholder="Reason" value="Required in my concentration" class="reason" name="reason[]"><br><br>
+                <label for="dept4">Department</label><br>
+                <input type="text" id="dept4" placeholder="Department" value="ITSC" class="dept" name="dept[]"><br><br>
+                <label for="num4">Class Number</label><br>
+                <input type="text" id="num4" placeholder="Number" value="3146" class="num" name="num[]"><br><br>
+                <label for="name4">Class Title</label><br>
+                <input type="text" id="name4" placeholder="Name" value="Operating Systems & Networking" class="name" name="name[]"><br><br>
+                <label for="reason4">Reason for taking</label><br>
+                <input type="text" id="reason4" placeholder="Reason" value="Required in my concentration" class="reason" name="reason[]"><br><br>
                 <button type="button" class="deleteCourse">❌</button><br><br>
             </div>
             </div>
 
             <button type="button" id="addCourse">➕ Add Course</button><br><br>
-            
-            <label>Fun Fact:</label><br>
-            <input type="text" name="funFact" placeholder="Enter a fun fact" value="My name means 3 because I am the third Joseph in my family."><br><br>
 
-            <label>Something I would like to share:</label><br>
-            <input type="text" name="shareable" placeholder="Enter something you'd like to share" value="I enjoy playing soccer"><br><br>
+            <label for="funFact">Fun Fact:</label><br>
+            <input type="text" id="funFact" name="funFact" placeholder="Enter a fun fact" value="My name means 3 because I am the third Joseph in my family."><br><br>
+
+            <label for="shareable">Something I would like to share:</label><br>
+            <input type="text" id="shareable" name="shareable" placeholder="Enter something you'd like to share" value="I enjoy playing soccer"><br><br>
 
             <h2>Links</h2><br>
-            <label>LinkedIn: </label>
-            <input type="text" name="linkedin" placeholder="Enter LinkedIn URL" value="https://www.linkedin.com/in/joseph-watson3/"><br><br>
-            <label>Github: </label>
-            <input type="text" name="github" placeholder="Enter GitHub URL" value="https://github.com/JWats114"><br><br>
-            <label>Personal Website: </label>
-            <input type="text" name="personalWebpage" placeholder="Enter personal website URL" value="https://josephwatson.net/"><br><br>
-            <label>Course Webpage: </label>
-            <input type="text" name="coursePage" placeholder="Enter course webpage URL" value="https://webpages.charlotte.edu/jwats114/itis3135"><br><br>
-            <label>Additional Link: </label>
-            <input type="text" name="additionalLink" placeholder="Enter additional link" value="Your Link"><br><br>
+            <label for="linkedin">LinkedIn: </label>
+            <input type="text" id="linkedin" name="linkedin" placeholder="Enter LinkedIn URL" value="https://www.linkedin.com/in/joseph-watson3/"><br><br>
+            <label for="github">Github: </label>
+            <input type="text" id="github" name="github" placeholder="Enter GitHub URL" value="https://github.com/JWats114"><br><br>
+            <label for="personalWebpage">Personal Website: </label>
+            <input type="text" id="personalWebpage" name="personalWebpage" placeholder="Enter personal website URL" value="https://josephwatson.net/"><br><br>
+            <label for="coursePage">Course Webpage: </label>
+            <input type="text" id="coursePage" name="coursePage" placeholder="Enter course webpage URL" value="https://webpages.charlotte.edu/jwats114/itis3135"><br><br>
+            <label for="additionalLink">Additional Link: </label>
+            <input type="text" id="additionalLink" name="additionalLink" placeholder="Enter additional link" value="Your Link"><br><br>
 
             <button type="submit">Submit</button>
             <button type="reset">Reset</button>
