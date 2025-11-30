@@ -76,6 +76,20 @@
             background-color: #A9CEF4;
             color: #344055;
         }
+
+        #output pre 
+        {
+            text-align: left;
+            margin: 0 auto;
+            display: block;
+            width: fit-content;
+        }
+
+        #output 
+        {
+            text-align: left;
+        }
+
     </style>
 </head>
 <body class="wrapper">
@@ -93,11 +107,12 @@
             <label for="firstName">First Name:</label><br>
             <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" value="Joseph" required><br><br>
 
+             <label for="nickname">Nickname / Preferred Name</label><br>
+            <input type="text" id="nickname" name="nickname" placeholder="Enter your nickname" value="Tre"><br><br>
+
+
             <label for="middleName">Middle Name / Initial</label><br>
             <input type="text" id="middleName" name="middleName" placeholder="Enter your middle name or initial" value="Goodwin"><br><br>
-
-            <label for="nickname">Nickname / Preferred Name</label><br>
-            <input type="text" id="nickname" name="nickname" placeholder="Enter your nickname" value="Tre"><br><br>
 
             <label for="lastName">Last name</label><br>
             <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" value="Watson" required><br><br>
@@ -112,11 +127,14 @@
             <figure>
                 <img id="previewImage" src="images/funPic.jpg" alt="Hiking photo" width="250">
             </figure>
-            <label for="picture">Upload Picture:</label><br>
-            <input type="file" id="picture" name="picture" accept="image/*"><br><br>
+            <label for="image">Upload Picture:</label><br>
+            <input type="file" id="image" name="picture" accept="image/*"><br><br>
 
-            <label for="caption">Caption</label><br>
-            <input type="text" id="caption" name="caption" placeholder="Enter image caption" value="Still standing"><br><br>
+            <label for="imageCaption">Caption</label><br>
+            <input type="text" id="imageCaption" name="caption" placeholder="Enter image caption" value="Still standing"><br><br>
+
+            <label for="personalStatement">Personal Statement:</label><br>
+            <input type="text" id="personalStatement" name="personalStatement" placeholder="Enter personal statement" value="..."><br><br>
 
             <label for="personalBackground">Personal Background:</label><br>
             <input type="text" id="personalBackground" name="personalBackground" placeholder="Enter personal background" value="I am from Charlotte, NC and have lived here since I was 3 years old."><br><br>

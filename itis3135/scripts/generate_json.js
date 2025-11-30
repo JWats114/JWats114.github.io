@@ -36,11 +36,11 @@ function collectCourses() {
         {
             department: courseElement.querySelector('.dept').value,
             number: courseElement.querySelector('.num').value,
-            title: courseElement.querySelector('.name').value,
+            name: courseElement.querySelector('.name').value,
             reason: courseElement.querySelector('.reason').value
         };
         
-        if (course.department || course.number || course.title || course.reason) 
+        if (course.department || course.number || course.name || course.reason) 
         {
             courses.push(course);
         }
@@ -92,36 +92,52 @@ function collectFormData()
 {
     const data = {};
     data.firstName = document.getElementById('firstName').value;
-    data.middleName = document.getElementById('middleName').value;
-    data.nickname = document.getElementById('nickname').value;
+    data.preferredName = document.getElementById('nickname').value;
+    data.middleInitial = document.getElementById('middleName').value;
     data.lastName = document.getElementById('lastName').value;
+    data.divider = "~";
     data.mascotAdjective = document.getElementById('mascotAdjective').value;
     data.mascotAnimal = document.getElementById('mascotAnimal').value;
     
-    data.imageCaption = document.getElementById('caption').value;
-    data.imageSrc = document.getElementById('previewImage').src;
+    const fullImagePath = document.getElementById('previewImage').src;
+    data.image = fullImagePath.split('/').pop();
+    data.imageCaption = document.getElementById('imageCaption').value;
     
+    data.personalStatement = document.getElementById('personalStatement').value;
     data.personalBackground = document.getElementById('personalBackground').value;
     data.professionalBackground = document.getElementById('professionalBackground').value;
     data.academicBackground = document.getElementById('academicBackground').value;
-    data.programmingBackground = document.getElementById('programmingBackground').value;
-    data.computerPlatform = document.getElementById('computerPlatform').value;
+    data.subjectBackground = document.getElementById('programmingBackground').value;
+    data.primaryComputer = document.getElementById('computerPlatform').value;
     
     data.courses = collectCourses();
     
     data.funFact = document.getElementById('funFact').value;
     data.shareable = document.getElementById('shareable').value;
     
-    data.links = 
-    {
-        linkedin: document.getElementById('linkedin').value,
-        github: document.getElementById('github').value,
-        personalWebpage: document.getElementById('personalWebpage').value,
-        coursePage: document.getElementById('coursePage').value,
-        additionalLink: document.getElementById('additionalLink').value
-    };
+    data.links = [
+        {
+            name: "GitHub",
+            href: document.getElementById('github').value
+        },
+        {
+            name: "GitHub Page", 
+            href: document.getElementById('coursePage').value
+        },
+        {
+            name: "freeCodeCamp",
+            href: "..."
+        },
+        {
+            name: "Codecademy", 
+            href: "..."
+        },
+        {
+            name: "LinkedIn",
+            href: document.getElementById('linkedin').value
+        }
+    ];
     
-    data.generatedAt = new Date().toISOString();
     return data;
 }
 
