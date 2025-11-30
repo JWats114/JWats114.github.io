@@ -52,6 +52,30 @@
             max-width: 250px;
             height: auto;
         }
+
+        label
+        {
+            font-size: 18px;
+        }
+
+        input
+        {
+            width: 30%;
+            height: 50px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        button
+        {
+            border-radius: 10px;
+            font-size: 25px;
+            height: 50px;
+            width: fit-content;
+            background-color: #A9CEF4;
+            color: #344055;
+        }
     </style>
 </head>
 <body class="wrapper">
@@ -98,16 +122,16 @@
             <input type="text" id="personalBackground" name="personalBackground" placeholder="Enter personal background" value="I am from Charlotte, NC and have lived here since I was 3 years old."><br><br>
 
             <label for="professionalBackground">Professional Background:</label><br>
-            <input type="text" id="professionalBackground" name="professionalBackground" placeholder="Enter professional background" value="Your professional background"><br><br>
+            <input type="text" id="professionalBackground" name="professionalBackground" placeholder="Enter professional background" value="I have no professional experience"><br><br>
 
             <label for="academicBackground">Academic Background:</label><br>
-            <input type="text" id="academicBackground" name="academicBackground" placeholder="Enter academic background" value="Your academic background"><br><br>
+            <input type="text" id="academicBackground" name="academicBackground" placeholder="Enter academic background" value="I am a junior here at UNC Charlotte"><br><br>
 
             <label for="programmingBackground">Programming/Software Background:</label><br>
-            <input type="text" id="programmingBackground" name="programmingBackground" placeholder="Enter programming background" value="Your programming background"><br><br>
+            <input type="text" id="programmingBackground" name="programmingBackground" placeholder="Enter programming background" value="I began coding my freshman year"><br><br>
 
             <label for="computerPlatform">Primary Computer Platform:</label><br>
-            <input type="text" id="computerPlatform" name="computerPlatform" placeholder="Enter primary computer platform" value="Your computer platform"><br><br>
+            <input type="text" id="computerPlatform" name="computerPlatform" placeholder="Enter primary computer platform" value="Lenovo"><br><br>
 
             <h2>Courses I'm Taking and Why:</h2><br>
             <div id="courses">
@@ -189,6 +213,7 @@
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
+    <script src="scripts/generate_json.js"></script>
     <script src="scripts/HTMLInclude.min.js"></script>
     <script src="scripts/introduction.js"></script>
 </body>

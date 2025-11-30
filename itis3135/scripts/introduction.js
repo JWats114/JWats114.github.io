@@ -123,8 +123,8 @@ addCourseBtn.addEventListener("click", () => {
         <input type="text" id="num${courseCount}" placeholder="Number" class="num" name="num[]"><br><br>
         <label for="name${courseCount}">Class Title</label><br>
         <input type="text" id="name${courseCount}" placeholder="Name" class="name" name="name[]"><br><br>
-        <label for="reason${courseCount}">Reason for taking</label><br>
-        <input type="text" id="reason${courseCount}" placeholder="Reason" class="reason" name="reason[]"><br><br>
+        <label for="reason${courseCount}" >Reason for taking</label><br>
+        <input type="text" id="reason${courseCount}" placeholder="Reason" class="reason largeInput" name="reason[]"><br><br>
         <button type="button" class="deleteCourse">❌</button><br><br>
     `;
     wrapper.querySelector(".deleteCourse").addEventListener("click", () => {
