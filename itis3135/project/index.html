@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laci McShane RN | Home</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+
+        h1
+        {
+            opacity: 0;
+            animation: fadeInDown 1s ease-out 0s forwards;
+        }
+
+        h2, h4
+        {
+            font-size: 45px;
+            margin: auto 0;
+            color: #38023B;
+            opacity: 0;
+        }
+        
+        h2
+        {
+            animation: fadeInDown 0.75s ease-out 0.5s forwards;
+        }
+
+        h3
+        {
+            font-size: 75px;
+            margin: auto 0;
+            color: purple;
+            opacity: 0;
+            animation: fadeInRight 0.75s ease-out 0.5s forwards;
+        }
+        
+        h4
+        {
+            animation: fadeInUp 0.75s ease-out 0.5s forwards;
+        }
+
+        p
+        {
+            color: #38023B;
+        }
+
+        hr
+        {
+            opacity: 0;
+            animation: fadeIn 0.75s ease-out 1.8s forwards;
+        }
+
+        .navbar a
+        {
+            opacity: 0;
+            animation: fadeInUp 0.75s ease-out forwards;
+        }
+
+        .navbar span
+        {
+            opacity: 0;
+            animation: fadeIn 0.75s ease-out 0.3s forwards;
+        }
+        
+
+        .greeting
+        {
+            width: fit-content;
+            text-align: left;
+        }
+        
+        .picture
+        {
+            height: 500px;
+            width: 500px;
+            opacity: 0;
+            border-radius: 50%;
+            margin: auto 10px;
+            background-color: #38023B;
+            box-shadow: 0px 0px 20px #38023B;
+            animation: zoomIn 1s ease-out 0.3s forwards, pulse 4s ease-in-out 1.5s infinite;
+        }
+
+        .quote
+        {
+            margin-top: 40px;
+            width: 700px;
+            font-size: 20px;
+        }
+
+        .greeting p
+        {
+            opacity: 0;
+            animation: fadeInUp 0.75s ease-out 1s forwards;
+        }
+
+        footer
+        {
+            opacity: 0;
+            animation: fadeIn 0.75s ease-out 0.5s forwards;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <!-- Initial greeting on home page -->
+        <div class="greeting">
+            <h2>Hello, my name is</h2>
+            <h3>Laci Briana McShane</h3>
+            <h4>Nursing Student</h4>
+            <!-- Quote -->
+            <p class="quote">"As a nurse, we have the opportunity to heal the heart, mind, soul and body of our patients, their family and ourselves. They may not remember your name but they will never forget the way you made them feel"</p>
+            <p class="quote">- Maya Angelou</p>
+        </div>
+            <!-- Image of client -->
+            <img class="picture" src="images/mcshaneProfilePhoto.jpg" alt="Laci McShane Photo">
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link.html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link.css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

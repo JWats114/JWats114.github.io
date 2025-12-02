@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laci McShane RN | Contact Me</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        main 
+        {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .contact
+        {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+        }
+
+        .contactForm
+        {
+            display: flex;
+            height: 100%;
+            width: 75%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form
+        {
+            display: flex;
+            flex-direction: column;
+            height: 70%;
+            width: 80%;
+            justify-content: center;
+            align-items: center;
+            background-color: #38023B;
+            padding: 50px 20px;
+            border-radius: 50px;
+        }
+
+        label
+        {
+            color: #CDC7E5;
+            font-size: 20px;
+        }
+
+        input
+        {
+            text-align: center;
+            font-size: 15px;
+            border-radius: 10px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .senderInfo
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 40%;
+        }
+
+        .senderInfo label
+        {
+            margin-bottom: 10123px;
+        }
+
+
+        .senderInfo input
+        {
+            height: 30px;
+            width: 50%;
+            margin-bottom: 10px;
+        }
+
+        .senderName
+        {
+            width: 50%;
+        }
+        
+        .senderContactInfo
+        {
+            width: 50%;
+        }
+
+        .messageContainer
+        {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 60%;
+            width: 100%;
+        }
+
+        .messageContainer input
+        {
+            width: 70%;
+            height: 70%;
+        }
+
+        button
+        {
+            height: 50px;
+            width: 15%;
+        }
+
+        .contactInfo 
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 25%;
+        }
+
+        .contactInfo i
+        {
+            font-size: 40px;
+        }
+
+        .phoneContact
+        {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .emailContact
+        {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contactType
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .contactType i
+        {
+            margin-right: 25px;
+        }
+
+        .contactType p
+        {
+            font-size: 25px;
+            font-weight: bolder;
+        }
+
+        .info
+        {
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>Contact Me</h2>
+
+        <div class="contact">
+            <div class="contactForm">
+                <form>
+                    <!-- Information of message sender -->
+                    <div class="senderInfo">
+                        <div class="senderName">
+                            <label>First Name</label><br>
+                            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name"><br>
+
+                            <label>Last Name</label><br>
+                            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name"><br><br>
+                        </div>
+
+                        <div class="senderContactInfo">
+                            <label>Email</label><br>
+                            <input type="text" id="email" name="email" placeholder="Enter your email"><br>
+
+                            <label>Phone Number</label><br>
+                            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number"><br><br>
+                        </div>
+                    </div>
+                    <!-- Message being sent -->
+                    <div class="messageContainer">
+                        <label>Message</label><br>
+                        <input type="text" id="message" name="message" placeholder="Enter your message">
+                    </div>
+                <button>Submit</button>
+                </form>
+            </div>
+
+            <div class="contactInfo">
+
+                <!-- Client Phone Info -->
+                <div class="phoneContact">
+                    <div class="contactType">
+                        <i class="fas fa-phone"></i>
+                        <p>Call Me</p>
+                    </div>
+                    
+                    <div class="info">
+                        <!-- Client did not want to provide number, dummy number put in place -->
+                        <p class="contactinfo">(704) 999-9999</p>
+                   </div>
+                </div>
+
+                <!-- Client Email Info -->
+                <div class="emailContact">
+                    <div class="contactType">
+                        <i class="fas fa-envelope"></i>
+                        <p>Email Me</p>
+                    </div>
+
+                    <div class="info">    
+                        <p class="contactinfo">jtwchrome@gmail.com</p>
+                        <p class="contactinfo">jwats114@charlotte.edu</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </main>
+
+        <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link.html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link.css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

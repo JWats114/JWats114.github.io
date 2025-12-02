@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laci McShane RN | Education</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/default.css">
+    <style>
+        main 
+        {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        h3
+        {
+            font-size: 30px;
+        }
+
+        h4
+        {
+            font-size: 25px;
+        }
+        
+        .educationContainer 
+        {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .college
+        {
+            text-align: center;
+            width: 25%;
+            height: 100%;
+        }
+
+        .highSchool 
+        {
+            text-align: center;
+            width: 25%;
+            height: 100%;
+        }
+
+        img
+        {
+            margin-top: 10px;
+            width: 25%;
+            height:max-content;
+        }
+
+        ul
+        {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        
+        <h2>Education</h2>
+        
+        <!-- Both levels of education in seperate divs for separate classes -->
+        <div class="educationContainer">
+            <!-- Sun Valley -->
+            <img src="images/svLogo.png" alt="Sun Valley Logo">
+            <div class="highSchool">
+                <h3>High School</h3>
+                <h4>Sun Valley High School</h4>
+                <p><b>Location: Monroe, NC</b></p>
+                <p><b>Graduation Date: May 2022</b></p>
+                <p><b>GPA: Magna Cum Laude</b></p>
+                <p><b>Clubs: BETA Club, National Honor Society</b></p>
+            </div>
+
+            <!-- Wingate University -->
+            <img src="images/wingateLogo.svg" alt="Wingate Logo">
+            <div class="college">
+                <h3>College</h3>
+                <h4>Wingate University</h4>
+                <p><b>Location: Wingate, NC</b></p>
+                <p><b>Expected Graduation Date: May 2027</b></p>
+                <p><b>GPA: 3.0</b></p>
+                <p><b>Honors: Dean's List</b></p>
+                <p style="font-size: 18px; margin-bottom: 5px;"><b>Relevant Coursework</b></p>
+                <ul style="margin-top: 0;">
+                    <li>Anatomy & physiology</li>
+                    <li>Medical Terminology</li>
+                    <li>Holistic Care Concepts</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script>
+        document.getElementById("validation_link.html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link.css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+
+</body>
+</html>
